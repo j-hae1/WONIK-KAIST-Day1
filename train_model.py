@@ -136,7 +136,7 @@ def main(train_config):
 
 if __name__ == '__main__':
     state_orders = [1, 5, 10]
-    action_orders = [5, 10, 20, 50]
+    action_orders = [1, 5, 10, 20, 50]
     for state_order in state_orders:
         for action_order in action_orders:
             train_config = {
