@@ -96,7 +96,7 @@ def main(train_config):
     with open('{}/train_config_{}_{}.txt'.format(model_save_path, state_order, action_order), 'wb') as f:
         pickle.dump(train_config, f)
     # Start Training
-    print('Model Training Start, State Order: {}, Action Order: {}'.format(model_name, state_order, action_order))
+    print('Model Training Start, State Order: {}, Action Order: {}'.format(state_order, action_order))
     for ep in range(EPOCHS):
         if ep % 100 == 0:
             print("Epoch [{}] / [{}]".format(ep+1, EPOCHS))
